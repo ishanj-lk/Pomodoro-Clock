@@ -5,10 +5,15 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 #clock{
@@ -98,4 +103,10 @@ p{
     width: 100%;
     text-align: center;
     margin: 30px 0 0;
+}
+
+#creator{
+    -webkit-user-select: text; /* Safari */
+    -ms-user-select: text; /* IE 10 and IE 11 */
+    user-select: text; /* Standard syntax */
 }
