@@ -1,5 +1,9 @@
 $('document').ready(()=>{
 
+    //Update copyright year
+    let year = new Date().getFullYear();
+    $('#creator').text('Created with ❤️ by Ishan Jayasinghe ©️ ' + year + '.');
+
     $('#break-decrement').click(()=>{
         let breakLength = $('#break-label').text();
         if(breakLength > 1){
